@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Pokedex Logo" class="header-logo">
+        <h1>Catalogue</h1>
+        <div>
+            <label for="sort">Sort by: </label>
+            <select id="sort">
+                <option value="id-asc">ID No. (Ascending)</option>
+                <option value="id-desc">ID No. (Descending)</option>
+                <option value="name-asc">Name (A-Z)</option>
+                <option value="name-desc">Name (Z-A)</option>
+            </select>
+        </div>
+        <div>
+            <p></p>
+            <label for="filter">Search: </label>
+            <input type="text" id="filter" placeholder="Enter name or ID number">
+        </div>
+    </header>
+    <main class="main-container">
+        <div id="catalogue" class="catalogue-container"></div>
+        <button id="load-more">Load More</button>
+    </main>
+
+    <script src="pokedex.js"></script>
+</body>
+</html>
